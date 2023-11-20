@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pizza Order</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/custom.js" defer></script>
+    <body>
+    <header class="menu-row" id="header">
+        <div class="logo">
+          <!--for logo-->
+          <div>
+              <a href="index.html"><img src ="./img/WhatsApp Image 2023-08-09 at 21.49.49.jpg" alt="our logo"></a>>
+          </div>
+      </div>
+      <nav>
+          <!--for menu links-->
+          <menu class="menu">
+              <li><a href="" target="_blank">HOME</a></li>
+              <li><a href="puzhakaradathgopu@gmail.com" target="_blank">E-MAIL</a></li>
+              <li><a href="" target="_blank">FAN CLUB</a></li>
+              <li><a href="" target="_blank">LOGIN</a></li>
+          </menu>
+      </nav>  
+   </header> 
+  </head>
+  <main>
+    <div class="content-wrapper">
+        <form id="pizzaForm">
+      <!-- Pizza Size -->
+      <label for="size">Size:</label>
+      <select id="size" name="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option></select
+      ><br />
+
+      <!-- Pizza Toppings -->
+      <label for="toppings">Toppings:</label><br />
+      <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni" />
+      <label for="pepperoni">Pepperoni</label><br />
+      <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms" />
+      <label for="mushrooms">Mushrooms</label><br />
+      <input type="checkbox" id="olives" name="toppings" value="Olives" />
+      <label for="olives">Olives</label><br />
+      <input type="checkbox" id="onions" name="toppings" value="Onions" />
+      <label for="onions">Onions</label><br />
+      <input type="checkbox" id="sausage" name="toppings" value="Sausage" />
+      <label for="sausage">Sausage</label><br />
+      <input type="checkbox" id="bacon" name="toppings" value="Bacon" />
+      <label for="bacon">Bacon</label><br />
+      <input
+        type="checkbox"
+        id="bellPeppers"
+        name="toppings"
+        value="Bell Peppers"
+      />
+      <label for="bellPeppers">Bell Peppers</label><br />
+      <input type="checkbox" id="pineapple" name="toppings" value="Pineapple" />
+      <label for="pineapple">Pineapple</label><br />
+      <input type="checkbox" id="spinach" name="toppings" value="Spinach" />
+      <label for="spinach">Spinach</label><br />
+      <input type="checkbox" id="jalapenos" name="toppings" value="Jalapenos" />
+      <label for="jalapenos">Jalapenos</label><br />
+      <input type="checkbox" id="tomatoes" name="toppings" value="Tomatoes" />
+      <label for="tomatoes">Tomatoes</label><br />
+
+      <!-- Extra Cheese -->
+      <label for="extraCheese">Extra Cheese:</label>
+      <input type="checkbox" id="extraCheese" name="extraCheese" /><br />
+
+      <!-- Crust Type -->
+      <label for="crust">Crust Type:</label>
+      <select id="crust" name="crust">
+        <option value="thin">Thin Crust</option>
+        <option value="thick">Thick Crust</option>
+        <option value="stuffed">Stuffed Crust</option></select
+      ><br />
+
+      <!-- Sauce Choice -->
+      <label for="sauce">Sauce:</label>
+      <select id="sauce" name="sauce">
+        <option value="tomato">Tomato</option>
+        <option value="pesto">Pesto</option>
+        <option value="bbq">BBQ</option></select
+      ><br />
+
+      <!-- Delivery Option -->
+      <label>Delivery Option:</label>
+      <input
+        type="radio"
+        id="delivery"
+        name="deliveryOption"
+        value="delivery"
+      />
+      <label for="delivery">Delivery</label>
+      <input type="radio" id="pickup" name="deliveryOption" value="pickup" />
+      <label for="pickup">Pickup</label><br />
+
+      <!-- Special Instructions -->
+      <label for="comments">Special Instructions:</label><br />
+      <textarea id="comments" name="comments"></textarea><br />
+
+      <!-- Order Button -->
+      <button type="button" id="orderButton">Order</button>
+    </form>
+</main>
+    <!-- Order Summary -->
+    <div id="orderSummary"></div>
+  
+    <section class="contact">
+        <div class="contactInformation">
+            <h2>Let's Connect! </h2>
+            <p>
+                If you ever want to discuss your favorite cocktails, share mixology tips, or simply have a friendly chat about the 
+                world of bartending <span class="smallerTextContact">(virtually)</span>, feel free to connect with me on social media or drop me a message here! I'm excited to exchange thoughts and ideas with fellow enthusiasts. Cheers to the wonderful journey ahead!
+            </p>
+            <ul class="socialIcons">
+              <li>
+                <a href="https://instagram.com/vibeshifter__?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D "><img src="./img/Footerimg.jpg" alt="Instagram"></a>
+              </li>
+              <li>
+                <a href="https://www.snapchat.com/add/gopups69420?share_id=Oo1B6jMIyac&locale=en-US "><img src="./img/footerImg2.jpg" alt="Instagram"></i></a>
+              </li>
+            </ul>
+        </div>
+        <footer>
+            <p>Designed and developed by Gopu Puzhakkaredath Selvaraj</p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,229 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+p,
+a,
+li,
+td {
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+/** header before scroll**/
+.menu-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 125px;
+  position: fixed;
+  z-index: 9999;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 1);
+  transition: all 0.25s ease;
+}
+.menu-row .logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.menu-row .logo > div {
+  height: 115px;
+  transition: all 0.25s linear;
+}
+.menu-row .logo img {
+  height: 100%;
+  width: auto;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 30px;
+}
+/*for navigation links */
+.menu li a {
+  color: #0d0d0d;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+/* a to hover*/
+.menu li a:hover {
+  background-color: #0d0d0d;
+  color: #f7f7f7;
+}
+/** the two section is active when the  scroll is grater than 75px**/
+.scrolled-menu {
+  background-color: #0e0e0e;
+}
+.scrolled-menu li a {
+  color: #f4f4f4;
+}
+.scrolled-menu li a:hover {
+  color: #0d0d0d;
+  background-color: #f7f7f7;
+}
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Set the height for html to ensure full page height */
+html {
+  height: 100%;
+}
+
+/* Use flexbox on body to create a column layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum height of 100% of the viewport height */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Style for the header */
+
+/* Flex-grow for main content to push the footer down */
+main {
+  margin-top: 125px;
+  padding-top: 125px;
+  flex-grow: 1; /* Takes up all available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  justify-content: flex-start; /* Align children to the top */
+}
+
+/* Ensure the form doesn't stretch too wide */
+form {
+  max-width: 600px; /* Adjust this value as needed */
+  width: 100%; /* Ensure it doesn't exceed the max-width */
+  margin: 20px; /* Adds margin to the top and bottom */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+/* Style for form elements */
+label,
+input,
+select,
+textarea,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Specific style for checkboxes and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+/* Style for the submit button */
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* CSS for the contact section */
+.contact {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+/* CSS for the contact information container */
+.contactInformation {
+  max-width: 400px;
+}
+
+/* CSS for the contact information heading */
+.contactInformation h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* CSS for the contact information paragraph */
+.contactInformation p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* CSS for the smaller text in contact information */
+.smallerTextContact {
+  font-size: 14px;
+  color: #888;
+}
+
+/* CSS for the social icons */
+.socialIcons {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.socialIcons li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.socialIcons a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.socialIcons a:hover img {
+  transform: scale(1.2);
+}
+
+/* CSS for the footer */
+footer {
+  background-color: #e1e2e1;
+  color: #121113;
+  padding: 7px;
+  text-align: center;
+}
+
+/* CSS for the text inside the footer */
+footer p {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
